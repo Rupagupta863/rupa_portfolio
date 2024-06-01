@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/portfoliowebsite.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./resources/icons/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="./index.html">
+        <img src="./images/favicon.png" alt="logo" width="35" />
+        <h4 style="font-family: 'Dancing Script'">Portfolio</h4>
+      </a>
+      <div class="nav-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <section class="about" id="about">
+      <div class="img">
+        <img src="https://picsum.photos/id/823/700/700" alt="profile" />
+      </div>
+      <div class="name">
+        <h2>Rupa</h2>
+        <p>Frontend developer</p>
+        <p class="aboutme">
+          I am an enthusiastic and motivated aspiring frontend developer with a
+          strong passion for creating visually appealing and user-friendly web
+          applications. While I am at the beginning of my journey in web
+          development, I am committed to learning and growing in this field. My
+          goal is to leverage my foundational skills and continuously expand my
+          knowledge to contribute effectively to web development projects.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="skl">SKILLS</h2>
+        <div class="skills_box">
+          <div class="skill">
+            <img src="./images/html.png" alt="HTML" />
+            <div class="progress-bar">
+              <div class="progress" data-progress="90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="./images/css.png" alt="CSS" />
+            <div class="progress-bar">
+              <div class="progress" data-progress="80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="./images/js.png" alt="JavaScript" />
+            <div class="progress-bar">
+              <div class="progress" data-progress="75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="./images/php.png" alt="PHP" />
+            <div class="progress-bar">
+              <div class="progress" data-progress="70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="./images/java.png" alt="Java" />
+            <div class="progress-bar">
+              <div class="progress" data-progress="80%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button onclick="prev()">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button onclick="next()">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="workinfo">
+        <h1>AGE CALCULATOR PROJECT</h1>
+        <p class="detail">
+          A web application using HTML, CSS, and JavaScript to calculate and
+          display a person's age in years based on their birthdate input. Users
+          enter their birthdate, and the app dynamically shows their age in
+          years.
+        </p>
+        <a
+          href="https://rupagupta863.github.io/age-calculator-/"
+          target="_blank"
+          ><button>Go to Project</button></a
+        >
+      </div>
+      <div class="workimg">
+        <img src="./images/sswork.png" alt="work1 image" />
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT US</h2>
+      <form action="#" class="form">
+        <div class="formitem">
+          <input type="text" name="name" id="name" required="required" />
+          <span>name</span>
+        </div>
+        <div class="formitem">
+          <input type="email" name="email" id="email" required="required" />
+          <span>email</span>
+        </div>
+        <div class="formitem">
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            required="required"
+          ></textarea>
+          <span>message</span>
+        </div>
+        <div class="formitem">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <i class="fa-regular fa-copyright"></i>All rights reserved.
+      </div>
+      <div class="links">
+        <a
+          href="https://www.linkedin.com/in/rupa-kumari-96162b27b/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Rupagupta863" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:rupagupta863@gmail.com" target="_blank"
+          ><i class="fa-brands fa-google"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./js/portfoliowebsite.js"></script>
+  </body>
+</html>
