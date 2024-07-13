@@ -7,7 +7,7 @@ skills.forEach((skill, index) => {
 
 const prev = () => {
   if (counter == 0) {
-    counter = 4;
+    counter = 7;
     slide();
   } else {
     counter--;
@@ -16,7 +16,7 @@ const prev = () => {
 };
 
 const next = () => {
-  if (counter == 4) {
+  if (counter == 7) {
     counter = 0;
     slide();
   } else {
